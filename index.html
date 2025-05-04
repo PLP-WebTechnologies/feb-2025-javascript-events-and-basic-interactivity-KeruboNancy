@@ -4,71 +4,36 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A woman</title>
+    <meta name="description"
+        content="Discover the power of femininity. Book one-on-one sessions to embrace your inner confidence and grace." />
+    <title>Embrace Your Femininity | Home</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body>
+<body class="home-page">
+    <header>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Book Now</a>
+        </nav>
+        <h1>Awaken your feminine power—soft, strong, magnetic. Come home to who you truly are. 💖</h1>
+        
+    </header>
 
-    <h1>What a Woman🎉</h1>
+    <main class="home">
+        <section class="hero">
+            <h2>Femininity isn’t something you chase. It’s something you remember.
+            It lives in your softness, your stillness, your power to feel deeply and love fully. In a world that tells you to
+            harden, this space invites you to soften—without losing your strength. Reconnect with your intuition, embrace your
+            sensuality, and live in flow. Your feminine energy is magnetic, sacred, and already within you. Let’s awaken it—together.</h2>
+           <a href="about.html"> <button id="exploreBtn" class="moreBtn">Explore More </button> </a>
+        </section>
+    </main>
 
-    <!-- 🔘 Button Section -->
-    <section class="interactive-section">
-        <h2>Click Here</h2>
-        <button id="colorButton" class="womanbt">I'm A Woman</button>
-        <p id="secretMessage" class="hidden">🎉 You just clicked me again, hehe😂</p>
-    </section>
-
-    <!-- 🖼️ Image Gallery -->
-    <section class="interactive-section">
-        <h2>A woman in her element</h2>
-        <div class="gallery">
-            <a href="https://ibb.co/q3s0Zwb6"><img src="https://i.ibb.co/rR6bWJn9/pexels-magapls-2149937712-31649556.jpg"
-                    alt="pexels-magapls-2149937712-31649556" border="0" alt="Image 1"
-                onclick="changeImage(this, 'https://via.placeholder.com/300')"></a> 
-            <a href="https://ibb.co/GfGTny4z"><img src="https://i.ibb.co/xKwHXWtx/pexels-david-olivares-1054696811-31768850-1.jpg"
-                    alt="pexels-david-olivares-1054696811-31768850-1" border="0" alt="Image 2"
-                onclick="changeImage(this, 'https://via.placeholder.com/400')"></a> 
-            <a href="https://ibb.co/SXC1XpZS"><img src="https://i.ibb.co/mCWYC7Pp/pexels-nadin-sh-78971847-13726800.jpg" alt="pexels-nadin-sh-78971847-13726800" border="0" alt="Image 3"
-                onclick="changeImage(this, 'https://via.placeholder.com/500')"> </a>
-        </div>
-    </section>
-
-    <!-- 🗂️ Tabs -->
-    <section class="interactive-section">
-        <h2>How To Be A Woman</h2>
-        <button onclick="openTab('tab1')">Secret 1</button>
-        <button onclick="openTab('tab2')">Secret 2</button>
-        <button onclick="openTab('tab3')">Secret 3</button>
-
-        <div id="tab1" class="tab-content active">
-            <p>To be a Woman is to love every inch of yourself 🎯</p>
-        </div>
-        <div id="tab2" class="tab-content">
-            <p>To be a woman is to appreciate nature and feel free from within💡</p>
-        </div>
-        <div id="tab3" class="tab-content">
-            <p>To be a woman is to want to appreciate your inner health and strive hard for it ✨</p>
-        </div>
-    </section>
-
-    <!-- 📝 Form Validation -->
-    <section class="interactive-section">
-        <h2>Sign Up Today</h2>
-        <form id="myForm" onsubmit="return validateForm(event)">
-            <label for="name">Name (required):</label><br />
-            <input type="text" id="name" name="name" required><br />
-
-            <label for="email">Email:</label><br />
-            <input type="email" id="email" name="email"><br />
-
-            <label for="password">Password (min 8 characters):</label><br />
-            <input type="password" id="password" name="password"><br />
-
-            <button type="submit">Submit</button>
-            <p id="formFeedback" class="feedback"></p>
-        </form>
-    </section>
+    <footer>
+        <p>&copy; 2025 EmbraceHerPower. All rights reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>

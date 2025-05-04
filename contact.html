@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Book your one-on-one session today. Start your journey towards embracing your true self." />
+    <title>Book Your Session | Embrace Her Power</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="contact-page">
+    <header>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Book Now</a>
+        </nav>
+        <h1>Book Your One-on-One Session</h1>
+       
+    </header>
+
+    <main class="contactForm">
+        <form id="bookingForm">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" required placeholder="Your name">
+
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" required placeholder="you@example.com">
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="+1 (123) 456-7890">
+
+            <label for="date">Preferred Date & Time</label>
+            <input type="datetime-local" id="date">
+
+            <label for="message">Tell me a bit about what you're looking for:</label>
+            <textarea id="message" rows="4" placeholder="I'd love help with..."></textarea>
+
+            <p id="feedback" class="feedback"></p>
+            <button type="submit" >Submit Booking</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 EmbraceHerPower. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
